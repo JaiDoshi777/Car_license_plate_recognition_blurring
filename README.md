@@ -5,7 +5,7 @@ This can be useful for privacy reasons, such as when the car owner does not wish
 
 The script begins with importing essential libraries, including cv2 for OpenCV functionalities, matplotlib.pyplot for image display, and numpy for numerical operations. The car image is then read using OpenCV's imread function and displayed using a helper function named display, which utilizes Matplotlib for visualization.
 
-To detect the number plate, the code loads a pre-trained Haar Cascade classifier for Russian license plates using cv2.CascadeClassifier. Haar Cascades are effective for object detection due to their ability to identify features based on intensity differences in the image.
+To detect the number plate, the code loads a pre-trained Haar Cascade classifier for license plates using cv2.CascadeClassifier. Haar Cascades are effective for object detection due to their ability to identify features based on intensity differences in the image.
 
 A function named detect_license_plate is defined to detect and mark the license plate in the image. The image is copied to avoid modifying the original, and the detectMultiScale method of the Haar Cascade classifier is used to detect the license plate. The method returns a list of bounding boxes, each represented by the coordinates (x, y, w, h) indicating the position and size of the detected plate. For each detected plate, a rectangle is drawn around it using cv2.rectangle, and the modified image with the detected license plate is returned and displayed.
 
