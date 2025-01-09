@@ -1,4 +1,4 @@
-# Car_number_plate_recognition_blurring
+# Car_license_plate_recognition_blurring
 Utilized computer vision to recognize and blur the number plate of a car
 
 This can be useful for privacy reasons, such as when the car owner does not wish to share their license plate number in a photo.
